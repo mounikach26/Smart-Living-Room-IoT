@@ -1,0 +1,62 @@
+#Project_Overview
+
+The aim of this project is to create a smart living room where the lights can be controlled
+wirelessly using a mobile phone enabled with Bluetooth technology. By implementing this
+project, we will be able to remotely control the lights in your living room, providing
+convenience and flexibility in managing our home lighting system.
+
+
+#Tools Required
+
+Apparatus Required:
+● ESP32 development board
+● Android Smartphone with Bluetooth
+● 5mm LED
+● 220 Ohm resistor
+● Jumper wires 
+● Breadboard
+
+#Procedure
+
+1. Hardware Connection:
+- Connect the anode of an LED to GPIO23 of the ESP32.
+- Connect the cathode of the LED to the GND pin of the ESP32.
+2. Bluetooth Terminal Application:
+- Ensure you have a Bluetooth Terminal application installed on your smartphone.
+- For Android devices, you can install the "Serial Bluetooth Terminal" app from the Google
+Play Store.
+3. Library Installation:
+- Open the Arduino IDE on your computer.
+- Navigate to Sketch > Include Library > Manage Libraries.
+- Search for "BluetoothSerial.h" and install it if it's not already installed.
+4. Uploading Code to ESP32:
+- Upload the provided code to the ESP32 using the Arduino IDE.
+- Make sure you have selected the correct board and COM port in the Arduino IDE
+settings.
+5. Pairing Bluetooth Devices:
+- Enable Bluetooth on your smartphone.
+- Open the Bluetooth settings on your smartphone and go to the list of paired devices.
+- Click on the settings icon and select "Pair new device".
+- You should see the ESP32 device named "ESP32_IoTlab" in the list. Pair with it.
+6. Connecting to ESP32:
+- Open the "Serial Bluetooth Terminal" app on your smartphone.
+- Tap the connect icon in the app.
+- Select the paired ESP32 device ("ESP32_IoTlab") from the list.
+- You should receive a "Connected" message indicating successful connection.
+7. Controlling LED:
+- In the "Serial Bluetooth Terminal" app, you can send commands
+to control the LED.
+- Send the letter "a" to turn the LED on. - Send the letter "b"
+to turn the LED of
+
+#Conclusion
+
+In conclusion, by following the provided steps, we can successfully set up a
+Bluetooth-controlled LED system using an ESP32 microcontroller and a smartphone. This
+project allows us to remotely control the LED's state (on/off) by sending simple commands ("a"
+to turn on, "b" to turn off) from the smartphone via a Bluetooth terminal application. With the
+ESP32 connected to the LED and the smartphone paired with the ESP32 via Bluetooth, we can
+easily toggle the LED's state wirelessly, providing convenience and flexibility in controlling
+lighting systems. This project demonstrates the practical application of IoT (Internet of Things)
+technology and showcases the seamless integration of hardware and software components to
+create a smart and interactive environment
